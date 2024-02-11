@@ -2055,6 +2055,9 @@
   (junction (at 231.14 72.39) (diameter 0) (color 0 0 0 0)
     (uuid afb7993e-8886-4de7-96be-580016359db6)
   )
+  (junction (at 44.45 110.49) (diameter 0) (color 0 0 0 0)
+    (uuid b025ad14-d472-4cc4-b908-b3c0451f1f1f)
+  )
   (junction (at 223.52 135.89) (diameter 0) (color 0 0 0 0)
     (uuid b1db5d6b-37cc-4f52-aac4-8c6f476ad2ae)
   )
@@ -5057,7 +5060,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 332.74 99.06 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 79e0f278-e582-4673-b74a-a329c081f2f1)
-    (property "Reference" "TP1" (at 335.28 94.488 0)
+    (property "Reference" "TP+12" (at 335.28 94.488 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "+12" (at 335.28 97.028 0)
@@ -5073,7 +5076,7 @@
     (instances
       (project "linearlight"
         (path "/9f31f3ef-fa50-46f5-aec7-55370bc57602"
-          (reference "TP1") (unit 1)
+          (reference "TP+12") (unit 1)
         )
       )
     )
@@ -5082,7 +5085,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 346.71 106.68 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 79e4ef62-9abc-4008-853d-0d3094f2d123)
-    (property "Reference" "TP2" (at 349.25 102.108 0)
+    (property "Reference" "TP+5" (at 349.25 102.108 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "+5" (at 349.25 104.648 0)
@@ -5098,7 +5101,7 @@
     (instances
       (project "linearlight"
         (path "/9f31f3ef-fa50-46f5-aec7-55370bc57602"
-          (reference "TP2") (unit 1)
+          (reference "TP+5") (unit 1)
         )
       )
     )
@@ -5736,6 +5739,31 @@
     )
   )
 
+  (symbol (lib_id "Connector:TestPoint") (at 44.45 110.49 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 961835c4-bbc5-49d8-9405-45e7eb8d8cd7)
+    (property "Reference" "TP_VDAC1" (at 46.99 105.918 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "VDAC" (at 46.99 108.458 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "TestPoint:TestPoint_THTPad_2.5x2.5mm_Drill1.2mm" (at 49.53 110.49 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 49.53 110.49 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 67531d0f-4207-4054-8a4f-4e29a7593a82))
+    (instances
+      (project "linearlight"
+        (path "/9f31f3ef-fa50-46f5-aec7-55370bc57602"
+          (reference "TP_VDAC1") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "Device:R") (at 219.71 77.47 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 971fe197-603b-49e6-aa8d-391bade76a15)
@@ -6092,7 +6120,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 332.74 104.14 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b630abe8-b117-45c7-a910-cb5fc10f75b6)
-    (property "Reference" "TP3" (at 335.28 99.568 0)
+    (property "Reference" "TP_GND1" (at 335.28 99.568 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "GND" (at 335.28 102.108 0)
@@ -6108,7 +6136,7 @@
     (instances
       (project "linearlight"
         (path "/9f31f3ef-fa50-46f5-aec7-55370bc57602"
-          (reference "TP3") (unit 1)
+          (reference "TP_GND1") (unit 1)
         )
       )
     )
@@ -6469,7 +6497,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 38.1 132.08 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d15b0bff-a1e1-4904-8f27-2c02c9140bb4)
-    (property "Reference" "TP4" (at 40.64 127.508 0)
+    (property "Reference" "TP+2.5" (at 40.64 127.508 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "2.5REF" (at 40.64 130.048 0)
@@ -6485,7 +6513,7 @@
     (instances
       (project "linearlight"
         (path "/9f31f3ef-fa50-46f5-aec7-55370bc57602"
-          (reference "TP4") (unit 1)
+          (reference "TP+2.5") (unit 1)
         )
       )
     )
