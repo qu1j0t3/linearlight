@@ -153,5 +153,14 @@ switch (process.argv[2]) {
     await setChannels([0, 0, 0, 0]);
     break;
   default:
-    console.info('First parameter should be "long" or "calib"');
+    console.info(`Supported commands:
+      long            : run calibration 100 times and print limits
+      calib           : run calibration 5 times and store channel limits in persistent 'settings' directory
+      colour X        : where X is a floating point number between 0 and 1.0,
+                        set all four channels to this fraction of their limit
+      colour R G B W  : where R, G, B, W are floating point numbers between 0.0 and 1.0,
+                        set respective channel to fraction of their limit
+      white           : full brightness
+      off             : minimum brightness
+    `);
 }

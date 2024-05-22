@@ -5598,7 +5598,7 @@
     (property "ki_keywords" "cap capacitor")
     (path "/c5c7bbf8-e109-4b44-9d77-c2500618ac6d")
     (attr through_hole)
-    (fp_text reference "C1" (at 1.25 -2.5) (layer "F.SilkS")
+    (fp_text reference "C1" (at 3.917 2.413) (layer "F.SilkS")
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 828aba7f-37cd-4fc5-83df-ecf665c325dc)
     )
